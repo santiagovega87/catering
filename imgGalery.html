@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTS-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!--FIN DE FONTS-->
+    <!-- Fontawensome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+        integrity="sha384-3Nqiqht3ZZEO8FKj7GR1upiI385J92VwWNLj+FqHxtLYxd9l+WYpeqSOrLh0T12c"
+        crossorigin="anonymous"></script>
+    <!-- Fontawensome-->
+    <link rel="stylesheet" href="style/main.css">
+    <title>Galeria de imagenes</title>
+</head>
+<body>
+    <header id="first">
+        <div class="header-conteiner">
+            <div class="head">
+                <div class="logo">
+                    <h1><a href="">CATERING</a></h1>
+                </div>
+                <div class="social-media">
+                    <!-- Icono social media en SVG, usar cuenta de fontawesome -->
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                  
+                </div>
+            </div>
+            <div class="conteiner-nav__apend">
+                <div class="conteiner-nav-nav__apend">
+                    <nav class="navigator">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="sociales.html">Sociales</a></li>
+                            <li><a href="CoffeeBreakCorporativos.html">Coffee Break / Corporativos</a></li>
+                            <li><a href="BebidasPostres.html">Bebidas y Postres</a></li>
+                            <li><a href="#modal">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>       
+    </header>
+    <main>
+        <section>
+            <!--Prueba con grid para la galeria de imagenes-->
+            <div class="img-continer">
+                <ul>
+                    <li></li>
+                    <li><p>"La receta no tiene alma. Es el cocinero quien debe darle alma a la receta." </p></li>
+                    <li></li>
+                    <li><p>#CATERING</p></li>
+                    <li><p>Eventos Corpo - rativos</p></li>
+                    <li></li>
+                    <li></li>
+                    <li><p>Socia - les</p></li>
+                    <li></li>
+                    <li></li>
+                    <li><p>Postres</p></li>
+                    <li><p>Amamos lo que hacemos</p></li>
+                </ul>
+
+            <!--
+                <p class="uno">1</p>
+                <p class="dos">2</p>
+                <p class="tres">3</p>
+                <p class="cuatro">4</p>
+                <p class="cinco">5</p>
+                <p class="seis">6</p>
+                <p class="siete">7</p>
+                <p class="ocho">8</p>
+                <p class="nueve">9</p>
+                -->
+            <!--Prueba con grid para la galeria de imagenes-->
+                <!--
+                <h1>Galeria de imagenes</h1>
+                <div class="-img">
+                    <h2>Title</h2>
+                    <img src="" alt="">
+                </div>
+                <div class="-img">
+                    <h2>Title</h2>
+                    <img src="" alt="">
+                </div>
+                <div class="-img">
+                    <h2>Title</h2>
+                    <img src="" alt="">
+                </div>
+                <div class="-img">
+                    <h2>Title</h2>
+                    <img src="" alt="">
+                </div>
+                <div class="-img">
+                    <h2>Title</h2>
+                    <img src="" alt="">
+                </div>
+                <div class="-img">
+                    <h2>Title</h2>
+                    <img src="" alt="">
+                </div>
+                <div class="-img">
+                    <h2>Title</h2>
+                    <img src="" alt="">
+                </div>
+                -->
+            </div>
+        </section>
+        <section class="view">
+            <div class="view-buttom">
+                <a href="#">Ver mas</a>
+            </div>
+        </section>
+    </main>
+    <!--STICKY WHATSAPP-->
+    <a class="sticky-whatsapp" href=https://api.whatsapp.com/send?phone=01168355724&text=Hola target="_blank"><i
+        class="fab fa-whatsapp float"></i></a>
+    <!--STICKY WHATSAPP-->
+    <!-- MODAL -->
+    <div id="modal" name="modal" class="modal">
+        <div class="modal-conteiner">
+            <a href="#" class="close">X</a>
+            <section id="form" class="contact">
+                <div class="form-conteiner">
+                    <h2>Contactanos</h2>
+                    <form action="" method="GET" enctype="application/x-www-form-urlencoded" class="form">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" name="name" placeholder="Nombre" required class="form-input">
+                        <label for="cel" class="form-label">Numero de contacto</label>
+                        <input type="text" name="cel" placeholder="Celular" required class="form-input">
+                        <label for="email" class="form-label">Mail de contacto</label>
+                        <input type="email" name="email" placeholder="Email" required class="form-input">
+                        <label for="cantidad" class="form-label">cantidad de personas</label>
+                        <div class="form-cant-date">
+                            <div class="form-cant">
+                                <!-- selector de cantidad de personas-->
+                                <label for="cantidad" class="form-label">cantidad de personas</label>                    
+                                <select name="cant" id="cantidad" required>
+                                    <option value="10">10</option>
+                                    <option value="20">20</option>
+                                    <option value="30">30</option>
+                                    <option value="40">40</option>
+                                    <option value="50+">50 +</option>
+                                </select>
+                                <!--fin de selector-->
+                            </div>
+                            <div class="form-date">
+                                <!-- date picker-->
+                                <label for="date" class="form-label">Fecha del evento
+                                    <i class="far fa-calendar-alt"></i>
+                                </label>
+                                <input type="date" name="date" class="form-date">
+                                <!--fin datepicker -->
+                            </div>
+                        </div>
+    
+                        <label for="description" class="form-label">Dejanos tus comentarios</label>
+                        <textarea name="description" id="desc" cols="30" rows="10" required class="form-input"></textarea>
+                        <input type="submit" class="btn-submit" value=" Enviar >>>">
+    
+                    </form>
+                </div>
+    
+            </section>
+        </div>
+    </div>
+    <!-- MODAL -->
+    <footer>
+        <div class="conteiner">
+            <div class="zone">
+                <p>Zona de Cobertura: Zona sur, Zona Oeste, Zona Norte, CABA, Capital Federal.
+                </p>
+            </div>
+            <div class="middle">
+                <div class="middle-catering ">
+                    <h4>CATERING</h4>
+                    <img src="http://placehold.it/200x60" alt="">
+                    <p>"La receta no tiene alma. Es el cocinero quien debe darle alma a la receta." 
+                    </p>           
+                </div>
+                <div class="middel-contac dual">
+                    <h4>CONTACTO</h4>
+                    <ul>
+                        <li>Tel: 011 ****-****</li>
+                        <li>Email: info@catering.com.ar</li>
+                        <li>Buenos Aires, Argentina</li>
+                    </ul>
+                </div>
+                <div class="middle-service dual">
+                    <h4>SERVICIOS</h4>
+                    <ul>
+                        <li><a href="">Pizza Party</a></li>
+                        <li><a href="">Coffee Break</a></li>
+                        <li><a href="">Tacos Mexicanos</a></li>
+                    </ul>
+                </div>              
+            </div>
+            <div class="end">
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+            </div>
+        </div>
+        <div class="conteiner-botton">
+            <p>Copyright © 2020 Catering | <a href="">Políticas de Privacidad</a></p>
+            <p>Design with <i class="fas fa-heart"></i> and <i class="fas fa-brain"></i> por SV</p> 
+        </div>
+        <!-- dir, tel, copyrigth, icons social media  -->
+    </footer>
+</body>
+</html>

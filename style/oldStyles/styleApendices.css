@@ -1,0 +1,464 @@
+/*Definir colores institucionales*/
+
+*{
+    /*Le elimine el "auto" a margin para trabajar el grid de galeria de imagenes*/
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+
+.head {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+   width: 50%;
+   text-align: left;
+   font-size: 1.5rem;
+   padding-left: 20px;
+   
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.social-media {
+    width: 50%;
+    text-align: right;
+    padding-right: 20px;
+
+}
+
+ .social-media a {
+     padding: 0 5px;
+     font-size: 1.9rem;
+     text-decoration: none;
+     color: #000;
+     display: inline-block;
+ }
+
+ /* Nav */
+
+ .conteiner-nav-nav__apend {
+    background-color: rgba(0,0,0,0.8);
+    border-bottom: 1px solid orange;
+}
+
+nav {
+   max-width: 1200px;
+}
+
+nav ul {
+   list-style: none;
+   font-size: 1.2rem;
+   display: flex;
+   justify-content: start;    
+}
+
+nav ul li a {
+   text-decoration: none;
+   display: block;
+   color: white;
+   padding: 12px 20px;  
+}
+
+nav ul li a:hover{
+   background-color: rgba(255, 255, 255, 0.5);
+   color: black;
+}
+
+/* Services */
+
+.conteiner {
+    max-width: 1200px;
+}
+
+.title-services {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.service {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    background: orange;    
+}
+
+@media (max-width: 750px) {
+    #reverse {
+        flex-direction: column !important;
+        /* Buscar porque no lo ajusta sin el !important*/
+    }
+    .service {
+        flex-direction: column;
+    }
+
+}
+
+.service 
+
+.service ul {
+    
+    margin-top: 10px;
+}
+
+.img-service-conteiner {
+    height: 100%;
+}
+
+.text-aside {
+    width: 100%;
+    background: grey;
+    height: max;
+    padding: 20px 30px;
+    
+}
+
+.text-aside h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.text-aside p{
+    margin-top: 20px;
+    font-size: 1.1rem;
+    text-align: justify;
+    font-weight: 400;
+}
+
+.text-aside li{
+    list-style: none;
+}
+
+#reverse {
+    flex-direction: row-reverse;
+}
+
+
+
+
+/* footer */
+footer {
+    background-color: #ddd;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+footer .conteiner {
+    max-width: 1200px;
+    padding: 20px 0;
+}
+
+.zone {
+    padding-bottom: 15px;
+    font-weight: 700;
+    border-bottom: 1px solid  rgb(20, 20, 20);
+}
+
+.middle {
+    display: flex;
+    justify-content: ;
+    margin: 15px 0;
+}
+
+.middle h4 {
+    margin-bottom: 10px;
+}
+
+.dual {
+    width: 30%;
+}
+
+/* class comodin*/
+
+.dual ul{
+    list-style: none;
+    padding-left: 100px;
+}
+
+.dual ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.dual ul a:hover {
+    text-decoration: underline;
+}
+
+.dual ul li {
+    text-align: left;
+    padding: 3px 0;
+}
+
+.conteiner-botton {
+    padding: 15px 0;
+    background: rgb(20, 20, 20);
+    color: white;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.conteiner-botton p {
+    padding: 3px 0;
+}
+
+.conteiner-botton p a {
+    text-decoration: none;
+    color: white;
+}
+
+.conteiner-botton p a:hover {
+    text-decoration: underline;
+}
+
+.end {
+    text-align: center;
+    font-size: 2rem;
+    display: inline-block;
+}
+.end a {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+    padding: 0 10px;
+}
+
+
+/* sticky whatsapp */
+
+.sticky-whatsapp {
+    position:fixed;
+	width:120px;
+	height:120px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:100px;
+	text-align:center;
+    font-size:5rem;
+	box-shadow: 2px 2px 3px #999;
+     z-index:100;
+}
+
+.float {
+    margin-top: 20px;
+}
+
+/* SECTION IMAGE GALERY index --> galeria de imagenes */
+
+/*Prueba con GRID para la galeria de imagenes*/
+
+.img-continer {
+    max-width: 1200px;
+    padding-top: 10px;
+    /*
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 150px 200px 50px 150px;
+    grid-template-areas: 
+        "uno dos tres"
+        "cuatro dos tres"
+        "cinco seis seis"
+        "ocho seis seis"
+        "siete nueve nueve"
+
+    ;
+    */
+}
+
+.img-continer ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px) 150px repeat(4, 300px);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    list-style: none;
+}
+
+.img-continer li {
+    /*border: 1px solid black;*/
+    width: 100%;
+}
+
+.img-continer li p {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: lighter;
+}
+
+.img-continer li:nth-child(1) {
+    border: 1px solid black;
+    background-image: url(../img/pizza3.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: ;
+}
+
+.img-continer li:nth-child(2) {
+    background-image: url(../img/pizzab&w.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: 1 / 2 / 3 / 4;
+}
+
+.img-continer li:nth-child(2) p {
+    font-weight: lighter;
+    font-size: 3rem;
+    text-align: justify;
+    color: white;
+    padding: 20px 20px;
+    
+
+}
+
+.img-continer li:nth-child(3) {
+    background-image: url(../img/tacos\ al\ disco.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: ;
+}
+
+.img-continer li:nth-child(4) {
+    border: 1px solid black;
+    background-image: url(../img/morrones.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: 3 / 1 / 4 / 4;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.img-continer li:nth-child(4) p {
+    font-size: 4rem;
+    padding-top: 30px;
+    color: black;
+    font-weight: 300;  
+    
+}
+
+.img-continer li:nth-child(5) {
+    background-color: orange;
+    background-size: cover;
+    background-position: center center;
+    grid-area: ;
+}
+
+.img-continer li:nth-child(6) {
+    border: 1px solid black;
+    background-image: url(../img/evento_corporativo.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: 4 / 2 / 5 / 4;
+}
+
+.img-continer li:nth-child(7) {
+    border: 1px solid black;
+    background-image: url(../img/tacos\ al\ disco\ 2.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: 5 / 1 / 6 / 3;
+}
+
+.img-continer li:nth-child(8) {
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center center;
+    grid-area: ;
+}
+
+.img-continer li:nth-child(9) {
+    border: 1px solid black;
+    background-image: url(../img//postre.jpg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: 6 / 2 / 7 / 4;
+}
+
+.img-continer li:nth-child(10) {
+    border: 1px solid black;
+    background-image: url(../img/pizza\ a\ la\ parrilal.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: 7 / 1 / 8 / 3;
+}
+
+.img-continer li:nth-child(11) {
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center center;
+    grid-area: ;
+}
+
+.img-continer li:nth-child(12) {
+    background-color: orange;
+    background-size: cover;
+    background-position: center center;
+    grid-area: ;
+}
+
+.view {
+    max-width: 1200px;
+}
+
+.view a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+/*
+.uno {
+    grid-area: uno;
+}
+
+.dos {
+    grid-area: dos;
+}
+
+.tres {
+    grid-area: tres;
+}
+
+.cuatro {
+    grid-area: cuatro;
+}
+
+.cinco {
+    grid-area: cinco;
+}
+
+.seis {
+    grid-area:seis;
+}
+
+.siete {
+    grid-area: siete;
+}
+
+.ocho {
+    grid-area: ocho;
+}
+
+.nueve {
+    grid-area: nueve;
+}
+*/

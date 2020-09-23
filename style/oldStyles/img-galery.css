@@ -1,0 +1,207 @@
+
+/*Prueba con GRID para la galeria de imagenes*/
+
+.img-continer {
+    max-width: 1200px;
+    padding-top: 10px;
+    /*
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 150px 200px 50px 150px;
+    grid-template-areas: 
+        "uno dos tres"
+        "cuatro dos tres"
+        "cinco seis seis"
+        "ocho seis seis"
+        "siete nueve nueve"
+
+    ;
+    */
+}
+
+.img-continer ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 300px) 150px repeat(4, 300px);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    list-style: none;
+}
+
+.img-continer li {
+    /*border: 1px solid black;*/
+    width: 100%;
+}
+
+.img-continer li p {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: lighter;
+}
+
+.img-continer li:nth-child(1) {
+    border: 1px solid black;
+    background-image: url(/img/pizza3.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: ;
+}
+
+.img-continer li:nth-child(2) {
+    background-image: url(/img/pizzab&w.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: 1 / 2 / 3 / 4;
+}
+
+.img-continer li:nth-child(2) p {
+    font-weight: lighter;
+    font-size: 3rem;
+    text-align: justify;
+    color: white;
+    padding: 20px 20px;
+    
+
+}
+
+.img-continer li:nth-child(3) {
+    background-image: url(/img/tacos\ al\ disco.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: ;
+}
+
+.img-continer li:nth-child(4) {
+    border: 1px solid black;
+    background-image: url(/img/morrones.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: 3 / 1 / 4 / 4;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.img-continer li:nth-child(4) p {
+    font-size: 4rem;
+    padding-top: 30px;
+    color: black;
+    font-weight: 300;  
+    
+}
+
+.img-continer li:nth-child(5) {
+    background-color: orange;
+    background-size: cover;
+    background-position: center center;
+    grid-area: ;
+}
+
+.img-continer li:nth-child(6) {
+    border: 1px solid black;
+    background-image: url(/img/evento_corporativo.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: 4 / 2 / 5 / 4;
+}
+
+.img-continer li:nth-child(7) {
+    border: 1px solid black;
+    background-image: url(/img/tacos\ al\ disco\ 2.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: 5 / 1 / 6 / 3;
+}
+
+.img-continer li:nth-child(7) p {
+    
+}
+
+.img-continer li:nth-child(8) {
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center center;
+    grid-area: ;
+}
+
+.img-continer li:nth-child(9) {
+    border: 1px solid black;
+    background-image: url(/img//postre.jpg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: 6 / 2 / 7 / 4;
+}
+
+.img-continer li:nth-child(10) {
+    border: 1px solid black;
+    background-image: url(/img/pizza\ a\ la\ parrilal.jpeg);
+    background-size: cover;
+    background-position: center center;
+    grid-area: 7 / 1 / 8 / 3;
+}
+
+.img-continer li:nth-child(11) {
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center center;
+    grid-area: ;
+}
+
+.img-continer li:nth-child(12) {
+    background-color: orange;
+    background-size: cover;
+    background-position: center center;
+    grid-area: ;
+}
+
+.view {
+    max-width: 1200px;
+}
+
+.view a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    color: black;
+    font-size: 2rem;
+    padding-top: 20px;
+}
+
+/*
+.uno {
+    grid-area: uno;
+}
+
+.dos {
+    grid-area: dos;
+}
+
+.tres {
+    grid-area: tres;
+}
+
+.cuatro {
+    grid-area: cuatro;
+}
+
+.cinco {
+    grid-area: cinco;
+}
+
+.seis {
+    grid-area:seis;
+}
+
+.siete {
+    grid-area: siete;
+}
+
+.ocho {
+    grid-area: ocho;
+}
+
+.nueve {
+    grid-area: nueve;
+}
+*/

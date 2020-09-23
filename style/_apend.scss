@@ -1,0 +1,217 @@
+.conteiner__apend {
+    max-width: 1200px;
+    .title-services {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 2rem;
+        text-transform: uppercase;
+        border-bottom: 1px solid black;
+    }
+    .flex__row {
+        display: flex;
+        flex-direction: row;
+        @media (max-width: 750px) {
+            flex-direction: column;
+        }
+
+    }
+    .service__apend__entradas {
+        margin-top: 30px;
+        .img-service-conteiner{
+            width: 40%;
+            background: url(/img/evento_corporativo.jpeg);
+            background-size: cover;
+            background-position: center center;
+            .text-aside {
+                width: 100%;
+                background: rgba(0,0,0,1);
+                background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+                background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(255,255,255,0)));
+                background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+                background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+                background: -ms-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+                background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=1 );
+                -webkit-box-shadow: 0px 13px 41px -1px rgba(0,0,0,0.58);
+                -moz-box-shadow: 0px 13px 41px -1px rgba(0,0,0,0.58);
+                box-shadow: 0px 13px 41px -1px rgba(0,0,0,0.58);
+                height: 150px;
+                padding: 20px 30px;
+                color: white;
+                ul {
+                    margin-top: 10px;
+                    list-style: none;
+                }
+            }
+        }
+        .services__entradas {
+            padding: 5px;
+            
+            .entradas {
+                border-bottom: 1px solid orange;
+                margin-top: 10px;
+                h4 {
+                    text-transform: uppercase;
+                }
+                ul, p {
+                    margin-top: 5px;
+                    list-style: none;
+                    padding-bottom: 3px;
+                    li {
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .service__apend {
+        margin-top: 30px;
+        background: orange;
+        .conteiner__apend {
+            display: flex;
+            flex-direction: row;
+            @media (max-width: 750px) {
+                flex-direction: column;
+            }
+        }
+        .conteiner__apend__pizza {
+            .img-service-conteiner{
+                background: url(/img/pizza3.jpeg);
+                background-size: cover;
+                background-position: center center;
+                .text-aside {
+                    width: 100%;
+                    background: rgba(0,0,0,1);
+                    background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+                    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(255,255,255,0)));
+                    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+                    background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+                    background: -ms-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+                    background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=1 );
+                    height: 150px;
+                    padding: 20px 30px;
+                    color: white;
+                    
+                }
+            }
+        }
+        .container__service__pizza{
+            background-color: $second-color ;
+            display: flex;
+            flex-direction: row;
+            @media (max-width: 750px) {
+                flex-direction: column;
+            }
+            .service__pizza {
+                width: 23%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border: 1px solid orange;
+                padding: 10px 10px;
+                border-radius: 10px;
+                background-color: white;
+                -webkit-box-shadow: 10px 13px 16px 0px rgba(0,0,0,0.58);
+                -moz-box-shadow: 10px 13px 16px 0px rgba(0,0,0,0.58);
+                box-shadow: 10px 13px 16px 0px rgba(0,0,0,0.58);
+                @media (max-width: 750px) {
+                    width: 100%;
+                }
+                ul {
+                    list-style: none;
+                }
+                h3 {
+                    display: block;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+                p {
+                    margin-top: 30px;
+                }
+            }
+        }
+        ul {
+            margin-top: 10px;
+        }
+        .img-service-conteiner__tacos {
+            
+            background: url(/img/tacosaldisco2.jpeg);
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            .text-aside {
+                text-align: right;
+                width: 100%;
+                background: grey;
+                height: max;
+                padding: 20px 30px;
+                background: rgba(255,255,255,0);
+                background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+                background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(0,0,0,1)));
+                background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+                background: -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+                background: -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+                background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=1 );
+                color: white;
+                h2{
+                    font-size: 2rem;
+                    font-weight: 400;
+                }
+                p{
+                    margin-top: 20px;
+                    font-size: 1.1rem;
+                    text-align: justify;
+                    font-weight: 400;
+                    color: black
+                }
+                li{
+                    list-style: none;
+                }
+            }
+        }
+        .img-service-conteiner__finger {       
+            background: url(/img/morrones.jpeg);
+            background-size: cover;
+            background-position: center center;
+            width: 100%;
+            .text-aside {
+                text-align: left;
+                width: 100%;
+                background: grey;
+                height: max;
+                padding: 20px 30px;
+                background: rgba(0,0,0,1);
+                background: -moz-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+                background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(255,255,255,0)));
+                background: -webkit-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+                background: -o-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+                background: -ms-linear-gradient(left, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+                background: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=1 );
+                color: white;
+                h2{
+                    font-size: 2rem;
+                    font-weight: 400;
+                }
+                p{
+                    margin-top: 20px;
+                    font-size: 1.1rem;
+                    text-align: justify;
+                    font-weight: 400;
+                }
+                li{
+                    list-style: none;
+                }
+            }
+        }
+    }
+}
+
+#reverse {
+    flex-direction: row-reverse;
+}
+
+

@@ -1,0 +1,127 @@
+/* header */
+
+.head {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+   width: 50%;
+   text-align: left;
+   font-size: 1.5rem;
+   padding-left: 20px;
+   a {
+    text-decoration: none;
+    color: black;
+    }   
+}
+
+.social-media {
+    width: 50%;
+    text-align: right;
+    padding-right: 20px;
+    a {
+        padding: 0 5px;
+        font-size: 1.9rem;
+        text-decoration: none;
+        color: #000;
+        display: inline-block;
+    }
+}
+
+/* Nav */
+  
+ .conteiner-nav {
+    max-width: 100%;
+    margin-top: 0px;    
+    height: 90vh;
+    /*le asigno una altura para poder visualizarlo en el navegador*/
+    /*background-color: black;*/
+    
+    background-image: url(../img/pizzab&w.jpeg);
+    background-size: cover;
+    background-position: center center;
+ }
+
+ .conteiner-nav-nav {
+     background-color: rgba(0,0,0,0.2);
+     border-bottom: 1px solid $color-intitucional;
+     
+ }
+
+ .conteiner-nav-nav__apend {
+    background-color: rgba(0,0,0,0.8);
+    border-bottom: 1px solid orange;
+}
+
+nav {
+    max-width: 1200px;
+    ul {
+        list-style: none;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    ul li a {
+        text-decoration: none;
+        display: block;
+        color: white;
+        padding: 12px 20px;
+        :hover{
+            background-color: rgba(255, 255, 255, 0.5);
+            color: black;
+        }     
+    }
+}
+
+/* img */
+.up-img {
+    color: white; 
+    max-width: 1200px;
+    margin-top: 0px;    
+}
+
+.text-up {
+    margin-top: 100px;
+    background-color: rgba(0,0,0,0.1);
+    padding: 40px 20px;
+    h2 {
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    p {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        font-weight: lighter;
+        text-align: justify;
+        font-style: oblique;
+        /*sangria*/
+        text-indent: 2rem;    
+    }
+    a {
+        font-weight: 500;
+        display: block;
+        text-align: center;
+        margin-top: 60px;
+        font-size: 1.4rem;
+        border: 1px solid $color-intitucional;
+        width: 50%;
+        padding: 10px 0;
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        :hover {
+            background:  rgba(0,0,0,0.2);
+        }
+    }
+    .firm {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+.first .up-img .text-up {
+    width: 60%;
+}

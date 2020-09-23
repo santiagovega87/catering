@@ -1,0 +1,1041 @@
+/*variables*/
+/*Import*/
+* {
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* footer */
+footer {
+  background-color: #ddd;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer .conteiner {
+  max-width: 1200px;
+  padding: 20px 0;
+}
+
+.zone {
+  padding-bottom: 15px;
+  font-weight: 700;
+  border-bottom: 1px solid #141414;
+}
+
+.middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+}
+
+.middle h4 {
+  margin-bottom: 10px;
+}
+
+.dual {
+  width: 30%;
+}
+
+.dual ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.dual ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.dual ul a :hover {
+  text-decoration: underline;
+}
+
+.dual ul li {
+  text-align: left;
+  padding: 3px 0;
+}
+
+/* class comodin*/
+.conteiner-botton {
+  padding: 15px 0;
+  background: #141414;
+  color: white;
+  font-weight: 100;
+  font-size: 1rem;
+}
+
+.conteiner-botton p {
+  padding: 3px 0;
+}
+
+.conteiner-botton p a {
+  text-decoration: none;
+  color: white;
+}
+
+.conteiner-botton p a :hover {
+  text-decoration: underline;
+}
+
+.end {
+  text-align: center;
+  font-size: 2rem;
+  display: inline-block;
+}
+
+.end a {
+  text-decoration: none;
+  color: #141414;
+  padding: 0 10px;
+}
+
+/* header */
+.head {
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 50%;
+  text-align: left;
+  font-size: 1.5rem;
+  padding-left: 20px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.social-media {
+  width: 50%;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.social-media a {
+  padding: 0 5px;
+  font-size: 1.9rem;
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+
+/* Nav */
+.conteiner-nav {
+  max-width: 100%;
+  margin-top: 0px;
+  height: 90vh;
+  /*le asigno una altura para poder visualizarlo en el navegador*/
+  /*background-color: black;*/
+  background-image: url(../img/pizzab&w.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.conteiner-nav-nav {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid orange;
+}
+
+.conteiner-nav-nav__apend {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid orange;
+}
+
+nav {
+  max-width: 1200px;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  padding: 12px 20px;
+}
+
+nav ul li a :hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+/* img */
+.up-img {
+  color: white;
+  max-width: 1200px;
+  margin-top: 0px;
+}
+
+.text-up {
+  margin-top: 100px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+}
+
+.text-up h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.text-up p {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-align: justify;
+  font-style: oblique;
+  /*sangria*/
+  text-indent: 2rem;
+}
+
+.text-up a {
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  margin-top: 60px;
+  font-size: 1.4rem;
+  border: 1px solid orange;
+  width: 50%;
+  padding: 10px 0;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.text-up a :hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.text-up .firm {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.first .up-img .text-up {
+  width: 60%;
+}
+
+.conteiner__apend {
+  max-width: 1200px;
+}
+
+.conteiner__apend .title-services {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+}
+
+.conteiner__apend .flex__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 750px) {
+  .conteiner__apend .flex__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.conteiner__apend .service__apend__entradas {
+  margin-top: 30px;
+}
+
+.conteiner__apend .service__apend__entradas .img-service-conteiner {
+  width: 40%;
+  background: url(/img/evento_corporativo.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.conteiner__apend .service__apend__entradas .img-service-conteiner .text-aside {
+  width: 100%;
+  background: black;
+  background: -webkit-gradient(left top, right top, color-stop(0%, black), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-gradient(linear, left top, right top, from(black), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, black 0%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=1 );
+  -webkit-box-shadow: 0px 13px 41px -1px rgba(0, 0, 0, 0.58);
+  box-shadow: 0px 13px 41px -1px rgba(0, 0, 0, 0.58);
+  height: 150px;
+  padding: 20px 30px;
+  color: white;
+}
+
+.conteiner__apend .service__apend__entradas .img-service-conteiner .text-aside ul {
+  margin-top: 10px;
+  list-style: none;
+}
+
+.conteiner__apend .service__apend__entradas .services__entradas {
+  padding: 5px;
+}
+
+.conteiner__apend .service__apend__entradas .services__entradas .entradas {
+  border-bottom: 1px solid orange;
+  margin-top: 10px;
+}
+
+.conteiner__apend .service__apend__entradas .services__entradas .entradas h4 {
+  text-transform: uppercase;
+}
+
+.conteiner__apend .service__apend__entradas .services__entradas .entradas ul, .conteiner__apend .service__apend__entradas .services__entradas .entradas p {
+  margin-top: 5px;
+  list-style: none;
+  padding-bottom: 3px;
+}
+
+.conteiner__apend .service__apend__entradas .services__entradas .entradas ul li, .conteiner__apend .service__apend__entradas .services__entradas .entradas p li {
+  padding-left: 10px;
+}
+
+.conteiner__apend .service__apend {
+  margin-top: 30px;
+  background: orange;
+}
+
+.conteiner__apend .service__apend .conteiner__apend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 750px) {
+  .conteiner__apend .service__apend .conteiner__apend {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.conteiner__apend .service__apend .conteiner__apend__pizza .img-service-conteiner {
+  background: url(/img/pizza3.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.conteiner__apend .service__apend .conteiner__apend__pizza .img-service-conteiner .text-aside {
+  width: 100%;
+  background: black;
+  background: -webkit-gradient(left top, right top, color-stop(0%, black), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-gradient(linear, left top, right top, from(black), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, black 0%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=1 );
+  height: 150px;
+  padding: 20px 30px;
+  color: white;
+}
+
+.conteiner__apend .service__apend .container__service__pizza {
+  background-color: #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 750px) {
+  .conteiner__apend .service__apend .container__service__pizza {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.conteiner__apend .service__apend .container__service__pizza .service__pizza {
+  width: 23%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid orange;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 10px 13px 16px 0px rgba(0, 0, 0, 0.58);
+  box-shadow: 10px 13px 16px 0px rgba(0, 0, 0, 0.58);
+}
+
+@media (max-width: 750px) {
+  .conteiner__apend .service__apend .container__service__pizza .service__pizza {
+    width: 100%;
+  }
+}
+
+.conteiner__apend .service__apend .container__service__pizza .service__pizza ul {
+  list-style: none;
+}
+
+.conteiner__apend .service__apend .container__service__pizza .service__pizza h3 {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.conteiner__apend .service__apend .container__service__pizza .service__pizza p {
+  margin-top: 30px;
+}
+
+.conteiner__apend .service__apend ul {
+  margin-top: 10px;
+}
+
+.conteiner__apend .service__apend .img-service-conteiner__tacos {
+  background: url(/img/tacosaldisco2.jpeg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
+.conteiner__apend .service__apend .img-service-conteiner__tacos .text-aside {
+  text-align: right;
+  width: 100%;
+  background: grey;
+  height: max;
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, 0);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, black));
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(black));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=1 );
+  color: white;
+}
+
+.conteiner__apend .service__apend .img-service-conteiner__tacos .text-aside h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.conteiner__apend .service__apend .img-service-conteiner__tacos .text-aside p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  text-align: justify;
+  font-weight: 400;
+  color: black;
+}
+
+.conteiner__apend .service__apend .img-service-conteiner__tacos .text-aside li {
+  list-style: none;
+}
+
+.conteiner__apend .service__apend .img-service-conteiner__finger {
+  background: url(/img/morrones.jpeg);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+}
+
+.conteiner__apend .service__apend .img-service-conteiner__finger .text-aside {
+  text-align: left;
+  width: 100%;
+  background: grey;
+  height: max;
+  padding: 20px 30px;
+  background: black;
+  background: -webkit-gradient(left top, right top, color-stop(0%, black), color-stop(100%, rgba(255, 255, 255, 0)));
+  background: -webkit-gradient(linear, left top, right top, from(black), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, black 0%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=1 );
+  color: white;
+}
+
+.conteiner__apend .service__apend .img-service-conteiner__finger .text-aside h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.conteiner__apend .service__apend .img-service-conteiner__finger .text-aside p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  text-align: justify;
+  font-weight: 400;
+}
+
+.conteiner__apend .service__apend .img-service-conteiner__finger .text-aside li {
+  list-style: none;
+}
+
+#reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.img-continer {
+  max-width: 1200px;
+  padding-top: 10px;
+}
+
+.img-continer ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (300px)[2] 150px (300px)[4];
+      grid-template-rows: repeat(2, 300px) 150px repeat(4, 300px);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  list-style: none;
+}
+
+.img-continer li {
+  width: 100%;
+}
+
+.img-continer li p {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: lighter;
+}
+
+.img-continer li:nth-child(1) {
+  border: 1px solid black;
+  background-image: url(../img/pizza3.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.img-continer li:nth-child(2) {
+  background-image: url(../img/pizzab&w.jpeg);
+  background-size: cover;
+  background-position: center center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 2 / 3 / 4;
+}
+
+.img-continer li:nth-child(2) p {
+  font-weight: lighter;
+  font-size: 3rem;
+  text-align: justify;
+  color: white;
+  padding: 20px 20px;
+}
+
+.img-continer li:nth-child(3) {
+  background-image: url(../img/tacosaldisco.jpeg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.img-continer li:nth-child(4) {
+  border: 1px solid black;
+  background-image: url(../img/morrones.jpeg);
+  background-size: cover;
+  background-position: center center;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: 3 / 1 / 4 / 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img-continer li:nth-child(4) p {
+  font-size: 4rem;
+  padding-top: 30px;
+  color: black;
+  font-weight: 300;
+}
+
+.img-continer li:nth-child(5) {
+  background-color: orange;
+  background-size: cover;
+  background-position: center center;
+}
+
+.img-continer li:nth-child(6) {
+  border: 1px solid black;
+  background-image: url(../img/evento_corporativo.jpeg);
+  background-size: cover;
+  background-position: center center;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 4 / 2 / 5 / 4;
+}
+
+.img-continer li:nth-child(7) {
+  border: 1px solid black;
+  background-image: url(../img/tacosaldisco2.jpeg);
+  background-size: cover;
+  background-position: center center;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 5 / 1 / 6 / 3;
+}
+
+.img-continer li:nth-child(8) {
+  background-color: #ddd;
+  background-size: cover;
+  background-position: center center;
+}
+
+.img-continer li:nth-child(9) {
+  border: 1px solid black;
+  background-image: url(../img/postre.jpg);
+  background-size: cover;
+  background-position: center center;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: 6 / 2 / 7 / 4;
+}
+
+.img-continer li:nth-child(10) {
+  border: 1px solid black;
+  background-image: url(../img/pizzaalaparrilal.jpeg);
+  background-size: cover;
+  background-position: center center;
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 7 / 1 / 8 / 3;
+}
+
+.img-continer li:nth-child(11) {
+  background-color: #ddd;
+  background-size: cover;
+  background-position: center center;
+}
+
+.img-continer li:nth-child(12) {
+  background-color: orange;
+  background-size: cover;
+  background-position: center center;
+}
+
+.view {
+  max-width: 1200px;
+}
+
+.view a {
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: black;
+  font-size: 2rem;
+  padding-top: 20px;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.modal-conteiner {
+  background-color: white;
+  height: 100%;
+  padding: 10px 10px;
+  position: relative;
+}
+
+.modal-conteiner .close {
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  font-size: 2rem;
+  padding-right: 20px;
+  color: black;
+}
+
+#modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/*start*/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* main */
+/* section services */
+.service-section {
+  background: orange;
+}
+
+.service-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /*revisar este flex - es para ver los 3 servicios alineados*/
+  margin-top: 30px;
+  max-width: 1200px;
+}
+
+.service {
+  /*
+    border: solid 1px black;
+    border-radius: 20px 0px;
+    */
+  width: 32%;
+  text-align: center;
+  padding: 10px;
+  /*
+    padding: 10px;
+    */
+  background-color: white;
+  /*
+    box-shadow: 2px 2px 3px #999;
+    */
+}
+
+.service h2 {
+  text-align: center;
+  padding: 20px 0px;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.service p {
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.service a {
+  display: block;
+  margin-top: 5px;
+  font-size: 1.7rem;
+  padding: 5px;
+  border: 1px solid black;
+  /*
+        border-radius: 20px 0 ;
+        */
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.service ul li {
+  text-align: left;
+  list-style: none;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px 20px;
+}
+
+.img-service {
+  background-image: url(../img/pizza3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 300px;
+}
+
+.img-service2 {
+  background-image: url(../img/evento_corporativo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 300px;
+}
+
+.img-service3 {
+  background-image: url(../img/postre.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 300px;
+}
+
+@media (max-width: 750px) {
+  .service-conteiner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .service {
+    width: 100%;
+  }
+  .test-conteiner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dual {
+    width: 100%;
+  }
+  nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .dual ul {
+    padding-left: 0px;
+  }
+  .dual ul li {
+    text-align: center;
+  }
+}
+
+/* galery img */
+.galery-img .galery {
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.galery-img .galery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*NOTA: revisar este flex - es a modo de ver como quedaria en el navegador*/
+}
+
+.galery-img .galery ul li {
+  list-style: none;
+  width: 20%;
+}
+
+.galery-img .galery ul li img {
+  width: 100%;
+  height: 250px;
+}
+
+.galery-img a {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+/* section form */
+#form {
+  margin-top: 30px;
+  background-color: orange;
+  /* reeemplazarfondo por otro color o una imagen acorde*/
+}
+
+.form-conteiner {
+  padding-bottom: 40px;
+}
+
+.form-conteiner h2 {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.form {
+  background-color: #ddd;
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  padding: 10px 35px 20px 35px;
+}
+
+.form .form-label {
+  display: block;
+  font-size: 1rem;
+  padding: 5px 0px;
+}
+
+.form .form-input, .form .form-textarea {
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #000;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0px;
+  font-size: 1rem;
+}
+
+.form .form-textarea {
+  resize: vertical;
+  max-height: 150px;
+  min-height: 50px;
+}
+
+.form .btn-submit {
+  width: 100%;
+  font-family: sans-serif;
+  outline: none;
+  background-color: white;
+  border: none;
+  padding: 10px 0px;
+  font-size: 1rem;
+}
+
+/* form date-cant (resolver responsive)*/
+.form-cant-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10px;
+}
+
+.form-cant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.form-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/* form date-cant (resolver responsive)*/
+/* return */
+.return {
+  max-width: 1200px;
+  text-align: center;
+}
+
+.return a {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.return a span {
+  font-size: 3rem;
+}
+
+/* section test */
+.commets {
+  margin-top: 30px;
+  /*
+    height: 250px;
+    */
+  max-width: 1200px;
+}
+
+.commets h2 {
+  text-align: center;
+}
+
+.test-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*revisar flex*/
+  text-align: center;
+}
+
+.test-conteiner p {
+  text-align: justify;
+  margin-top: 20px;
+}
+
+.test {
+  margin: 10px 10px 20px 20px;
+}
+
+/* sticky whatsapp */
+.sticky-whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 2.5rem;
+  -webkit-box-shadow: 2px 2px 3px #999;
+          box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.float {
+  margin-top: 10px;
+}
+/*# sourceMappingURL=main.css.map */
